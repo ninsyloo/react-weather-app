@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from "react";
 
+export default function SearchBar() {
+  const [city, setCity] = useState("");
 
-
-export default function SearchBar(){
-
-    return(
-        <div>
-            
-        </div>
-    )
+  return (
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        onSearch(city);
+      }}
+    >
+      <input
+        type="text"
+        placeholder="City..."
+        value={city}
+        onChange={(e) => setCity(e.target.value)}
+      />
+      <input type="submit" value="Add" />
+    </form>
+  );
 }
