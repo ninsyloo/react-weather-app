@@ -14,29 +14,29 @@ function App() {
   const [cities, setCities] = useState([]);
 
   function onClose(id){
-    setCities(oldCities.filter(c => c.id !== id))
+    setCities(oldCities => oldCities.filter(c => c.id !== id))
   }
   
   function onSearch(city){
 
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
     .then(e => e.json())
     .then((data)=>{
       if (data.main !== undefined){
         const city = {
-          min: Math.round(recurso.main.temp_min),
-          max: Math.round(recurso.main.temp_max),
-          img: recurso.weather[0].icon,
-          id: recurso.id,
-          wind: recurso.wind.speed,
-          temp: recurso.main.temp,
-          name: recurso.name,
-          weather: recurso.weather[0].main,
-          clouds: recurso.clouds.all,
-          latitude: recurso.coord.lat,
-          longitude: recurso.coord.lon
+          min: Math.round(data.main.temp_min),
+          max: Math.round(data.main.temp_max),
+          img: data.weather[0].icon,
+          id: data.id,
+          wind: data.wind.speed,
+          temp: data.main.temp,
+          name: data.name,
+          weather: data.weather[0].main,
+          clouds: data.clouds.all,
+          latitude: data.coord.lat,
+          longitude: data.coord.lon
         };
-        setCities( oldCities = [...oldCities, city]);
+        setCities( oldCities => [...oldCities, city]);
       } else {
         alert('City not found! Try another')
       }
@@ -64,7 +64,7 @@ function App() {
         <Route
          exact path='/ciudad/:ciudadId'
          render={({match}) => 
-         <Ciudad
+         <City
           city={cities.filter(c => c.id === parseInt(match.params.ciudadId))}
           />}
   />
