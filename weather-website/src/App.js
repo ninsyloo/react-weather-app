@@ -51,7 +51,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="container">
         <Route path = '/'
         render = {() => < Nav onSearch = { onSearch }/>}/>
         <Route

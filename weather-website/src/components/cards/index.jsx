@@ -1,9 +1,10 @@
 import React from "react";
 import Card from "../card";
+import './cards.css'
 
 export default function Cards({ cities, onClose }) {
   return (
-    <div className="cards-container">
+    <div className="container-cards">
       {cities.map((c) => (
         <Card
           key={c.id}

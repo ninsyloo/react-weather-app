@@ -1,17 +1,18 @@
 import React from "react";
 import SearchBar from "../searchbar";
 import { Link } from "react-router-dom";
+import './nav.css'
 
 export default function Nav({onSearch}) {
   return (
     <nav className="nav-container">
       <Link to="/">
-        <span className="brand">W.A.</span>
+        <span className="brand">Weatherly.</span>
       </Link>
       <Link to="/about">
-        <span>About</span>
+        <span className='aboutbtn'>About</span>
       </Link>
-      <SearchBar onSearch={onSearch} />
+      <SearchBar className='searchbar' onSearch={onSearch} />
     </nav>
   );
 }

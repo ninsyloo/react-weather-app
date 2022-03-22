@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root{
+  --beige:#DAB88B;
+  --cream:#FDF6EC;
+  --light-blue:#B7CADB;
+  --pastel-pink:#F3E9DD;
+  --dark:#191919;
+  --tan:#C75643;
+  --white:white;
+  --black:black;
+  --salmon:#EE8972;
+}
+
+html{
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark);
+  background-color: var(--cream);
+  background-image: url('https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+button{
+  outline:none;
+}
+
+.container{
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}

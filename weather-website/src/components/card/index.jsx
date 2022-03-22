@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './card.css'
 
 export default function Card({ min, max, name, img, onClose, id }) {
   return (
     <div className="card-container">
       <div id="closeIcon" className="row">
-        <button onClick={onClose} className="btn btn-sm btn-danger">
+        <button onClick={onClose} className="btn-close">
           X
         </button>
       </div>
