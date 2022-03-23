@@ -1,6 +1,7 @@
 .container-cards{
     margin-top:6rem;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }

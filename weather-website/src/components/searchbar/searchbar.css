@@ -3,7 +3,8 @@ form{
 }
 
 .submit-btn{
-    font-family: 'lobster';
+    font-family: 'Montserrat';
+    font-weight: bold;
     border:none;
     padding: 0.4rem;
     border-radius: 0 5px 5px 0;
@@ -18,7 +19,8 @@ form{
 }
 
 .search-input{
-    font-family: 'lobster';
+    font-family: 'Montserrat';
+    font-weight: bold;
     font-size:1.7rem;
     border-radius: 5px 0 0 5px;
     border:none;

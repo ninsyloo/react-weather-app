@@ -1,0 +1,17 @@
+.welcome{
+    margin-top:5rem;
+    text-align: center;
+    font-family: 'pacifico'
+}
+.sun{
+    width: 20%;
+}
+
+.splash-title{
+    font-size:3rem;
+}
+
+.splash-text{
+    font-size: 2rem;
+    border: 1rem double var(--pastel-pink);
+}

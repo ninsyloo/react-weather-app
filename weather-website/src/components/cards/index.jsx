@@ -1,12 +1,13 @@
 import React from "react";
 import Card from "../card";
 import './cards.css'
+import Splash from '../splash'
 
 export default function Cards({ cities, onClose }) {
   console.log(cities)
   return (
     <div className="container-cards">
-      {cities.map((c) => (
+      {cities.length ? cities.map((c) => (
         <Card
           key={c.id}
           max={c.max}
@@ -17,7 +18,8 @@ export default function Cards({ cities, onClose }) {
           onClose={() => onClose(c.id)}
           id={c.id}
         />
-      ))}
+      )):<Splash/>
+    }
     </div>
   );
 }
