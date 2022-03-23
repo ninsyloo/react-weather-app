@@ -1,0 +1,45 @@
+.about-container{
+    margin-top: 10rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.left{
+    flex:3;
+    text-align: center;
+    font-family: 'pacifico';
+}
+
+.left h1{
+    font-size:4rem;
+}
+.left h3{
+    font-size:2rem;
+}
+
+.btn-return{
+    font-size:2rem;
+    background-color: var(--pastel-pink);
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+
+.right{
+    flex:2;
+}
+
+.right img{
+    width: 50%;
+    border: dashed 1rem var(--dark);
+}
+
+@media only screen and (max-width: 768px){
+    .about-container{
+        padding: 10rem 0;
+        flex-direction: column;
+        gap: 5rem;
+    }
+}

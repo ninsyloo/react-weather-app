@@ -1,0 +1,53 @@
+.city-container{
+    margin: 10rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.city-container .w{
+    width:400px;
+    height: 300px;
+    background-color: var(--white);
+    border-radius: 30px;
+    position: relative;
+}
+
+.w-left{
+    height: 70%;
+    width: 100%;
+    background: linear-gradient(141deg,#f9ebe2 30%, #e7c3bb 75%);
+    position: absolute;
+    opacity: 0.6;
+    border-radius: 30px;
+    border-top: 6px double var(--dark);
+}
+
+.w-title{
+    text-transform: uppercase;
+    margin-top: 4.5rem;
+    text-align: center;
+    font-family: 'montserrat';
+    font-size: 2rem;
+}
+
+.city-container .w .w-image{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.item{
+ text-align: center;
+ font-size: 1.5rem;
+ font-family: montserrat; 
+}
+
+.temp{
+    margin-top: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom:10px;
+}

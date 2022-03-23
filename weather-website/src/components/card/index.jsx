@@ -35,11 +35,11 @@ export default function Card({ min, max, name, img, onClose, id, weather }) {
         <div className='contents'>
 
         <div>
-            <h1>{min}<span class="deg">&deg;</span></h1>
+           min <h1>{Math.round(min - 273.15)}<span class="deg">&deg;</span></h1>
         </div>
 
         <div>
-            <h1>{max}<span class="deg">&deg;</span></h1>
+            max <h1>{Math.round(max - 273.15)}<span class="deg">&deg;</span></h1>
         </div>
 
         <Link to={`/ciudad/${id}`}>
