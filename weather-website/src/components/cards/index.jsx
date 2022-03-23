@@ -3,6 +3,7 @@ import Card from "../card";
 import './cards.css'
 
 export default function Cards({ cities, onClose }) {
+  console.log(cities)
   return (
     <div className="container-cards">
       {cities.map((c) => (
@@ -12,6 +13,7 @@ export default function Cards({ cities, onClose }) {
           min={c.min}
           name={c.name}
           img={c.img}
+          weather={c.weather}
           onClose={() => onClose(c.id)}
           id={c.id}
         />

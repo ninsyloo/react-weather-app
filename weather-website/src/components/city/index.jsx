@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function City({ city }) {
+
   return (
     <div className="city-data">
       <div className="container">
