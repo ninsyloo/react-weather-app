@@ -7,7 +7,7 @@
 }
 
 .left{
-    flex:3;
+/*     flex:3; */
     text-align: center;
     font-family: 'pacifico';
 }
@@ -24,16 +24,17 @@
     background-color: var(--pastel-pink);
     padding: 1rem;
     border-radius: 20px;
+    font-family: 'montserrat';
+    text-transform: uppercase;
 }
 
 
-.right{
+/* .right{
     flex:2;
-}
+} */
 
-.right img{
-    width: 50%;
-    border: dashed 1rem var(--dark);
+.left img{
+    width: 30%;
 }
 
 @media only screen and (max-width: 768px){

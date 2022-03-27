@@ -50,7 +50,7 @@
 .layer {
     height: 100%;
     width: 100%;
-    background: linear-gradient(141deg,#f9ebe2 30%, #e7c3bb 75%);
+    background: linear-gradient(141deg,#f9ebe2 30%, #bbd9e7 75%);
     position: absolute;
     opacity: 0.6;
 }
