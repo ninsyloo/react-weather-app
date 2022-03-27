@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css'
 import nin from '../../assets/nins.jpg'
-import rainbow from '../../assets/rainbow.png'
+/* import rainbow from '../../assets/rainbow.png'*/
 import {Link} from 'react-router-dom'
 
 export default function About(){

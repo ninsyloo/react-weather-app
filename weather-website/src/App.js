@@ -43,12 +43,12 @@ function App() {
     });
   }
   
-  function onFilter(cityId){
+/*   function onFilter(cityId){
 
     let city = cities.filter(c => c.id === parseInt(cityId));
     if (city.length > 0) return city[0];
     return null;
-  }
+  } */
 
   return (
     <div className="container">
